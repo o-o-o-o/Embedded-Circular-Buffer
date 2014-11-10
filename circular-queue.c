@@ -32,7 +32,7 @@ void FreeBuffer(circularbuffer* pcb){
 */
 
 unsigned char BufferFull(circularbuffer* pcb){
-    if (pcb->tally == 255){
+    if (pcb->tally == QUEUE_SIZE){
         return 1;
     } else {
         return 0;
