@@ -12,6 +12,8 @@ typedef struct {
     unsigned char member_char;
 } membertype;
 
+extern membertype default_value;
+
 /* Define the structure of the circular buffer. */
 typedef struct {
     unsigned char queue_size; /* Define the circumeference of the buffer */

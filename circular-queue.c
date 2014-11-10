@@ -79,8 +79,8 @@ unsigned char AddMember(circularbuffer* pcb, membertype* newmember){
 
 unsigned char SubtractMember(circularbuffer* pcb, membertype* dequeue){
     if (BufferEmpty(pcb) == 1){
-        membertype empty_default = { .member_int = 99, .member_float = 9.99, .member_char = 9};
-        *dequeue = empty_default;
+        membertype default_value = { .member_int = 99, .member_float = 9.99, .member_char = 9};
+        *dequeue = default_value;
         return 0;
     }
 
